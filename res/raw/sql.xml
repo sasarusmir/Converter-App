@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sql>
+
+    <statement>
+        CREATE TABLE IF NOT EXISTS units (
+        id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        category TEXT,
+        unit TEXT,
+        name TEXT,
+        value DOUBLE);     </statement>
+    
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('WEIGHT/MASS', 'g', 'Gram', 1)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('WEIGHT/MASS', 'oz', 'Ounce', 28.3495)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('WEIGHT/MASS', 'mg', 'Milligram', 0.001)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('WEIGHT/MASS', 'gr', 'Grain', 0.0648)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('WEIGHT/MASS', 'dg', 'Decigram', 0.1)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('WEIGHT/MASS', 'lb', 'Pound', 453.592)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('WEIGHT/MASS', 'kg', 'Kilogram', 1000)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('WEIGHT/MASS', 't', 'Tonne', 1000000)
+    </statement>
+    
+    
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('LENGTH/DISTANCE', 'm', 'Meter', 1)
+    </statement>
+     <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('LENGTH/DISTANCE', 'mi', 'Mile', 1609.34)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('LENGTH/DISTANCE', 'mm', 'Millimeter', 0.001)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('LENGTH/DISTANCE', 'cm', 'Centimeter', 0.01)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('LENGTH/DISTANCE', 'in', 'Inch', 0.0254)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('LENGTH/DISTANCE', 'dm', 'Decimeter', 0.1)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('LENGTH/DISTANCE', 'ft', 'Foot', 0.3048)
+    </statement>
+     <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('LENGTH/DISTANCE', 'yd', 'Yard', 0.9144)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('LENGTH/DISTANCE', 'km', 'Kilometer', 1000)
+    </statement>
+   
+     <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'km/h', 'Kilometer per Hour', 0.2778)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'mph', 'Miles per Hour', 0.44704)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'cm/s', 'Centimeter per Second', 0.01)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'in/s', 'Inch per Second', 0.0254)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'ft/s', 'Foot per Second', 0.3048)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'kn', 'Knot', 0.5144)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'm/s', 'Meter per Second', 1)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'ma', 'Mach', 340.29)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'km/s', 'Kilometer per Second', 1000)
+    </statement>
+     <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'mps', 'Miles per Second', 1609.344)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('SPEED', 'c', 'Speed of Light(Vacuum)', 299792458)
+    </statement>
+
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'W', 'Watt', 1)
+    </statement>
+     <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'hp(I)', 'Horsepower (Int.)', 745.69987)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'J/h', 'Joul per Hour', 0.0002778)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'J/min', 'Joule per Minute', 0.0167)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'Btu/h', 'Btu per Hour (I.T.)', 0.29307107)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'VA', 'Volt-Ampere', 1)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'J/s', 'Jule per Second', 1)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'Cal/s', 'Calorie per Second', 4.1868)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'kW', 'Kilowatt', 1000)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'kCal/s', 'Kilocalorie per Second', 4186.8)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('POWER', 'MW', 'Megawatt', 1000000)
+    </statement>
+    
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'psi', 'Pounds per square inch', 0.068948)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'bar', 'Bar', 1)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'barad', 'Barad', 0.000001)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'mTorr', 'Millitorr', 0.00000133322)
+    </statement>
+     <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'Pa', 'Pascal', 0.00001)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'Torr', 'Torr', 0.00133322)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'kPa', 'Kilopascal', 0.01)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'at', 'Technical atmosphere', 0.980665)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'atm', 'Standard atmosphere', 1.0132501)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'MPa', 'Megapascal', 10)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'ksi', 'Kilopounds per sq. in.', 68.94757)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('PRESSURE', 'kbar', 'Kilobar', 1000)
+    </statement>
+   
+     <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('TEMPERATURE', '°F', 'Degree Fahrenheit', 255.9277)
+    </statement>
+     <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('TEMPERATURE', '°C', 'Degree Celsius', 274.15)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('TEMPERATURE', '°R', 'Degree Rankine', 0.5555)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('TEMPERATURE', 'K', 'Kelvin', 1)
+    </statement>
+    <statement>
+INSERT INTO units (category, unit, name, value) VALUES ('TEMPERATURE', '°Ré', 'Degree Reamur', 274.4)
+    </statement>
+</sql>

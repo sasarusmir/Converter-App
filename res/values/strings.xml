@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Converter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="unit_converter">UNIT CONVERTER</string>
+    <string name="choose_category">CHOOSE CATEGORY</string>
+    <string name="title_activity_choose_category">Choose Category</string>
+    <string name="title_activity_choose_unit">ChooseUnitActivity</string>
+    <string name="title_activity_currency_converter">CURRENCY CONVERTER</string>
+    <string name="title_activity_currency_table">CurrencyTableActivity</string>
+    <string name="title_activity_choose_currency">ChooseCurrencyActivity</string>
+    <string name="title_activity_calculator">CALCULATOR</string>
+
+</resources>

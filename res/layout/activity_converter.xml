@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.originalit.converter.ConverterActivity" >
+
+    <ScrollView
+        android:id="@+id/layout_scroll_converter"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true" >
+
+        <!-- android:layout_above="@id/navigation_buttons" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/convert_active_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/category_gradient"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="chooseCategory"
+                android:paddingBottom="30dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="30dp" >
+
+                <ImageView
+                    android:id="@+id/convert_active_category_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/a_mass_icn_active" />
+
+                <TextView
+                    android:id="@+id/convert_active_category_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/convert_active_category_image"
+                    android:text="WEIGHT/MASS"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="23dp"
+                    android:src="@drawable/main_category_change"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+ 
+            <RelativeLayout
+                android:id="@+id/layout_values"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/convert_active_category"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="25dp" >
+
+               
+
+                <LinearLayout
+                    android:id="@+id/layout_main_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_shape"
+                    android:orientation="horizontal" >
+                    
+                    
+
+                    <EditText
+                        android:id="@+id/edit_text_main_value"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.51"
+                        android:background="@null"
+                        android:hint="Type some number..."
+                        android:inputType="numberDecimal|numberSigned"
+                        android:onClick="openKeyboard"
+                        android:paddingBottom="20dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        android:textAppearance="@style/unitInput"
+                        android:textColorHint="@color/ConverterLighterGray" />
+
+                    <TextView
+                        android:id="@+id/main_unit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_unit_btn"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/main_unit_change"
+                        android:gravity="center"
+                        android:onClick="chooseUnit"
+                        android:padding="10dp"
+                        android:textAppearance="@style/unit" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_switch_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/layout_main_unit"
+                    android:layout_marginRight="29dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/main_unit_switch"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:onClick="switchUnit" />
+
+                <LinearLayout
+                    android:id="@+id/layout_result_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_switch_unit"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/result_value_unit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.51"
+                        android:textAppearance="@style/unitResult" />
+
+                    <TextView
+                        android:id="@+id/result_unit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_unit_btn"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/main_unit_change"
+                        android:gravity="center"
+                        android:onClick="chooseUnitResult"
+                        android:padding="10dp"
+                        android:textAppearance="@style/unit" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/layout_result_unit"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_button"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:onClick="convert"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="CONVERT"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- android:background="@drawable/main_convert_btn" -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/navigation_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/converter_btn_active" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/separator" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/currency_btn_xml"
+                    android:onClick="openCurrencyConverter" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/separator" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/calculator_btn_xml"
+                    android:onClick="openCalculator" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+  
+
+</RelativeLayout>

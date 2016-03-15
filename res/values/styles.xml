@@ -1,0 +1,103 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    
+    <style name="scroll_style"> 
+    <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+    <item name="android:scrollbarStyle">outsideInset</item>
+    <item name="android:scrollbars">vertical</item>
+    <item name="android:scrollbarSize">15dp</item>
+    <item name="android:fadeScrollbars">false</item>
+    <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb</item>
+    <item name="android:scrollbarTrackVertical">@drawable/scrollbar_track</item>
+</style>
+
+    
+    <style name="unit" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/ConverterDarkerGray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="list_unit" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">27sp</item>
+        <item name="android:textColor">@color/list_text_unit</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="unit_long" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/list_text_unit</item>
+    </style>
+    
+    <style name="unitInput" parent="@android:style/TextAppearance.Medium.Inverse">
+        <item name="android:textColorHint">@color/ConverterLighterGray</item>
+        <item name="android:textColor">@color/ConverterDarkerGray</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="unitResult" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/ConverterDarkerGray</item>
+        <item name="android:textStyle">bold</item>
+<!--         <item name="android:gravity">center</item> -->
+    </style>
+    
+      <style name="category_list" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/list_text_unit</item>
+    </style>
+    
+       <style name="currencyTable" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/ConverterDarkerGray</item>
+    </style>
+    
+        <style name="list_currency" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/list_text_unit</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+         <style name="currency" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">27sp</item>
+        <item name="android:textColor">@color/ConverterDarkerGray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+         <style name="calculatorButtons" parent="@android:style/Widget.Button.Inset">
+             <item name="android:textSize">23sp</item>
+              <item name="android:textStyle">bold</item>
+             <item name="android:textColor">@color/calculator_buttons_color</item>
+             <item name="android:paddingTop">10dp</item>
+             <item name="android:paddingBottom">10dp</item>
+             <item name="android:background">@drawable/calculator_btn_shape_xml</item>
+             <item name="android:layout_margin">3sp</item>
+         </style>
+         <style name="calculatorButtonEqual" parent="@android:style/Widget.Button.Inset">
+             <item name="android:textSize">23sp</item>
+             <item name="android:textStyle">bold</item>
+             <item name="android:textColor">@color/calculator_buttons_color</item>
+             <item name="android:paddingTop">10dp</item>
+             <item name="android:paddingBottom">10dp</item>
+             <item name="android:background">@drawable/calculator_btn_shape_equal_xml</item>
+             <item name="android:layout_margin">3sp</item>
+         </style>
+      
+</resources>

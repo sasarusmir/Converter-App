@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.originalit.converter.currencyconverter.CurrencyConverter" >
+
+   <ScrollView
+        android:id="@+id/layout_scroll_currency_converter"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+ 
+            <RelativeLayout
+                android:id="@+id/layout_values_currency_converter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="70dp" >
+
+                <LinearLayout
+                    android:id="@+id/layout_main_unit_currency_converter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_shape"
+                    android:orientation="horizontal" >
+                    
+                    
+
+                    <EditText
+                        android:id="@+id/edit_text_main_value_currency_converter"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.51"
+                        android:background="@null"
+                        android:hint="Type some number..."
+                        android:inputType="number"
+                        android:onClick="openKeyboard"
+                        android:paddingBottom="20dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        android:textAppearance="@style/unitInput"
+                        android:textColorHint="@color/ConverterLighterGray" />
+
+                    <TextView
+                        android:id="@+id/main_currency_text_currency_converter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_unit_btn"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/main_unit_change"
+                        android:gravity="center"
+                        android:onClick="chooseCurrency"
+                        android:padding="10dp"
+                        android:textAppearance="@style/currency" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_switch_currency_currency_converter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/layout_main_unit_currency_converter"
+                    android:layout_marginRight="29dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/main_unit_switch"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:onClick="switchCurrency" />
+
+                <LinearLayout
+                    android:id="@+id/layout_result_currency_currency_converter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_switch_currency_currency_converter"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/result_value_currency_currency_converter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.51"
+                        android:textAppearance="@style/unitResult" />
+
+                    <TextView
+                        android:id="@+id/result_currency_text_currency_converter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_unit_btn"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/main_unit_change"
+                        android:gravity="center"
+                        android:onClick="chooseCurrencyResult"
+                        android:padding="10dp"
+                        android:textAppearance="@style/currency" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_convert_currency_converter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/layout_result_currency_currency_converter"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_button"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:onClick="convert"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="CONVERT"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/button_currency_table_currency_converter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/button_convert_currency_converter"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_button"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:onClick="openCurrencyTable"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="SHOW CURRENCY TABLE"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView 
+                    android:id="@+id/currency_json_txtView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/button_currency_table_currency_converter"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/navigation_buttons_currency_converter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/converter_btn_xml"
+                    android:onClick="openUnitConverter" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/separator" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/currency_btn_active" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/separator" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/calculator_btn_xml"
+                    android:onClick="openCalculator" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
